@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-nav {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-items {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-items:hover {
+  color: aqua;
+  transition: 0.3s ease-in-out;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Hamburger Menu  */
+/* container */
+.hamburger-menu {
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger,
+.bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(-45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 668px) {
+  * {
+    overflow: hidden;
+  }
+}
+
+/* Tiles  */
+
+#tiles-section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.tiles-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tile-outer {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  /* float: left;
+  margin: 20px; */
+}
+
+.tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tile-outer:hover .tile-inner {
+  transform: rotateX(180deg);
+}
+
+.tile-front,
+.tile-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.tile-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.tile-back {
+  background-color: black;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+#fullPage {
+  justify-content: center;
+  align-items: center;
+}
+.js-fullScreen {
+  justify-content: center;
+  align-items: center;
+}
+
+#full-screen-video-bg {
+  height: 100vh;
+  width: 100%vw;
+  background: purple;
+  display: none;
+}
