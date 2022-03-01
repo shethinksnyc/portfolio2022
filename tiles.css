@@ -5,7 +5,7 @@
   font-family: "Lato", sans-serif;
 }
 
-main {
+body {
   background-color: black;
   height: 100vh;
   width: 100vw;
@@ -88,9 +88,6 @@ a {
 }
 
 @media only screen and (max-width: 668px) {
-  * {
-    overflow: hidden;
-  }
 }
 
 /* Tiles  */
@@ -161,9 +158,15 @@ a {
   align-items: center;
 }
 
-#full-screen-video-bg {
-  height: 100vh;
-  width: 100%vw;
-  background: purple;
+/*  Background Full Screen Video  */
+#full-page-background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hidden-bg {
   display: none;
 }

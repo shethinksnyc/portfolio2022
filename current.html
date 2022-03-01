@@ -29,7 +29,7 @@
           </div>
         </div>
       </nav>
-
+      <!-- Tile Container -->
       <section id="tiles-section">
         <!-- Tile 1 -->
         <div class="tiles-container">
@@ -72,6 +72,7 @@
               </div>
             </div>
           </div>
+
           <!-- Tile 3 -->
           <div class="tile-outer">
             <div class="tile-inner">
@@ -91,10 +92,10 @@
                 </p>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <button id="full-screen" type="submit">Click Me</button>
-                <div id="full-screen-video-bg"></div>
               </div>
             </div>
           </div>
+
           <!-- Tile 4 -->
           <div class="tile-outer">
             <div class="tile-inner">
@@ -157,8 +158,19 @@
             </div>
           </div>
         </div>
+        <!-- Background Video for Full Screen Tile  -->
+        <video
+          id="full-page-background-video"
+          class="hidden-bg"
+          autoplay
+          loop
+          muted
+        >
+          <source src="fullscreenVidJs.mp4" type="video/mp4" />
+        </video>
       </section>
     </main>
+
     <script type="text/javascript" src="current.js"></script>
   </body>
 </html>

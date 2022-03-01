@@ -10,16 +10,36 @@ const mobileMenu = document.querySelector(".hamburger");
 // on click in mobile to close
 
 // full screen on tile button click
+
+// Select button element
+const fullScreenButton = document.querySelector("#full-screen");
+// Adds event listener to button for click + callback function
+fullScreenButton.addEventListener("click", fullScreenHandler);
+// Selects container with all elements for back of tile
+const fullPage = document.querySelector("#fullPage");
+
 function fullScreenHandler(event) {
-  if (!document.fullScreenButton) {
-    fullPage.requestFullscreen().catch((err) => {
-      alert(
-        `Error attempting to enable fullscreen mode: ${err.message} (${err.name})`
-      );
-    });
-  } else {
-    document.exitFullscreen();
-  }
+  // request fullscreen method on button click to back of tile
+  fullPage.requestFullscreen();
+}
+
+// check if full screen mode is true
+// hide one class
+// show other class
+
+// event listener for back of tile screen change
+fullPage.addEventListener("fullscreenchange", hideShowHandler);
+
+// select all elements to hide
+const wholeContainer = document.querySelector("#fullPage");
+
+// select all classes in back of tile container--> DOM tokenList
+const classes = wholeContainer.classList;
+console.log(classes);
+
+function hideShowHandler(event) {
+  // select hidden class of video
+  classes.toggle("hidden-bg");
 }
 
 // on full page mode
@@ -28,17 +48,19 @@ function fullScreenHandler(event) {
 // show container with button and background as video
 // on click of button exit full- screen or esc
 
-const fullPage = document.querySelector("#fullPage");
-const fullScreenButton = document.querySelector("#full-screen");
+// const backgroundFullScreenVideo = document.querySelector(
+//   "#full-page-background-video"
+// );
 
-fullScreenButton.addEventListener("click", fullScreenHandler);
+// function checkFullScreen() {}
 
-document.addEventListener("fullscreenchange", function () {
-  const backSideInFull = document.querySelector("#fullPage");
+// document.addEventListener("fullscreenchange", function () {});
 
-  if (backSideInFull) {
-  }
-});
+// const backSideInFull = document.querySelector("#fullPage");
+
+//   if (backSideInFull) {
+//     // toggle hidden class with back of tile
+//     backgroundFullScreenVideo.classList.toggle("visible");
 
 // add view change listener to back tile
 // on view change
