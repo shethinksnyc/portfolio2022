@@ -147,6 +147,8 @@ a {
   background-color: black;
   color: white;
   transform: rotateX(180deg);
+  display: flex;
+  align-items: center;
 }
 
 #fullPage {
