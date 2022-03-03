@@ -55,3 +55,15 @@ function init() {
 
   new TypeWriter(txtElement, words, wait);
 }
+
+// Navigation Bar
+
+// select button icon
+const navToggle = document.querySelector(".navbar_toggle");
+
+//select ul class
+const navLinks = document.querySelector(".main__nav");
+
+navToggle.addEventListener("click", function () {
+  navLinks.classList.toggle("show_nav");
+});

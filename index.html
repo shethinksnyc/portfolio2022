@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header class="header-wrap">
-      <nav id="nav-wrap">
-        <ul id="nav-links">
-          <li class="nav-item"><a href="/">About Me</a></li>
-          <li class="nav-item">
-            <a href="current.html">Current Work</a>
-          </li>
-          <li class="nav-item"><a href="/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navigation Bar  -->
+    <nav id="nav-wrap">
+      <div class="about-meLogo">
+        <a href="index.html" class="logo">HOME</a>
+        <button class="navbar_toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <ul class="main__nav">
+        <li>
+          <a href="/" class="nav-item">About Me</a>
+        </li>
+        <li>
+          <a href="current.html" class="nav-item">Current Work</a>
+        </li>
+        <li id="navbar-btn">
+          <a href="/" class="button" id="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
     <main id="home-page">
       <div class="hero-container">
-        <h1>
+        <h1 class="hero__text">
           Hi, I am Diana Restrepo a
           <span
             class="txt-type"
@@ -40,6 +57,6 @@
       </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>

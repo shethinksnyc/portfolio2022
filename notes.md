@@ -1,23 +1,16 @@
 To do:
-contianer with background video for full page tile
-
-center the content in the back of tile(s)
-
 navbar -- mobile menu
+currently have 2 differnt ways -neither of them work properly
+one is with icon image / other is spans
 
-When viewport size gets to mobile size back fo tiles do not display
+<!--  Current / Tiles -->
 
-add comments to identify different sections to help with parent - child relationships
+Fix Navbar to match rest of pages
 
 add media query to hold tiles in center on extra large screens
 
-organize file structure
-adjust routes
+Add placeholder descriptive placeholder text
 
-- icons for tiles
-- images and videos
-- css
-- scripts
+<!-- fetch API  -->
 
-// write about me section
-// home page animation
+Style button
