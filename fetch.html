@@ -12,25 +12,33 @@
     />
   </head>
   <body>
-    <nav id="nav-wrap">
-      <div class="home">
+    <!-- NAvigation Bar -->
+
+    <header class="nav-container">
+      <h2 class="home-logo">
         <a href="index.html" class="logo">HOME</a>
-        <button class="navbar_toggle">
-          <i class="fas fa-bars"></i>
-        </button>
+      </h2>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <ul class="main_nav">
+
+      <ul class="nav-menu">
         <li>
-          <a href="index.html" class="nav-link">About Me</a>
+          <a href="/" class="nav-links">About Me</a>
         </li>
         <li>
-          <a href="current.html" class="nav-link">Current Work</a>
+          <a href="current.html" class="nav-links">Current Work</a>
         </li>
-        <li class="navabr-btn">
-          <a href="/" class="button">Contact</a>
+        <li>
+          <a href="/" class="nav-links nav-link-btn">Contact</a>
         </li>
       </ul>
     </nav>
+    </header>
+
+
     <main class="content-box-wrap">
       <section class="container">
         <h1>Fetch a random Philosophy quote</h1>
@@ -41,7 +49,9 @@
 
           <div id="author" class="feed">-Seneca</div>
         </div>
+        <div class="button">
         <button type="submit" id="fetch">Click Here</button>
+      </div>
       </section>
     </main>
     <script src="JS/fetch.js"></script>

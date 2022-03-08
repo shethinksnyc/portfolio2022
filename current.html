@@ -14,175 +14,181 @@
     />
   </head>
   <body>
-    <main class="content-wrap">
-      <nav class="top-nav">
-        <div class="nav-container">
-          <a class="nav-items" href="index.html">Home</a>
-          <a class="nav-items" href="current.html">Current Work</a>
-          <a class="nav-items" href="/">About Me</a>
-          <a class="nav-items" href="/">Contact</a>
-          <!-- Hamburger Menu  -->
-          <div class="hamburger-menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+    <header class="nav-container">
+      <nav class="navbar">
+        <h2 class="home-logo">
+          <a href="index.html" class="logo">HOME</a>
+        </h2>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="/" class="nav-links">About Me</a>
+          </li>
+          <li>
+            <a href="current.html" class="nav-links">Current Work</a>
+          </li>
+          <li>
+            <a href="/" class="nav-links nav-link-btn">Contact</a>
+          </li>
+        </ul>
       </nav>
-      <!-- Tile Container -->
-      <section id="tiles-section">
-        <!-- Tile 1 -->
-        <div class="tiles-container">
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/htmlIcon.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="tile-back">
-                <div class="back-wrap">
-                  <h1>HTML</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium, eum.
-                  </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
+    </header>
+    <!-- Tile Container -->
+    <main id="tiles-section">
+      <!-- Tile 1 -->
+      <div class="tiles-container">
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/htmlIcon.svg"
+                alt="HTML logo image with number 5 in the middle"
+                style="width: 300px; height: 300px"
+              />
             </div>
-          </div>
-          <!-- Tile 2 -->
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/cssIcon.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="tile-back">
-                <div class="back-wrap">
-                  <h1>HTML</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium, eum.
-                  </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tile 3 -->
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/javaScriptIcon.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-
-              <div class="tile-back" id="fullPage">
-                <div class="back-wrap">
-                  <h1>HTML</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium, eum.
-                  </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <button id="full-screen" type="submit">Click Me</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tile 4 -->
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/nodeJsIcon.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="tile-back">
-                <div class="back-wrap">
-                  <h1>HTML</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium, eum.
-                  </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Tile 5 -->
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/web-api.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-
-              <div class="tile-back">
-                <div class="back-wrap">
-                  <h1>FETCH API</h1>
-                  <p>Random philosophy quote generator</p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <button id="fetchAPI">
-                    <a class="fetchAPI" href="fetch.html">FETCH</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tile-outer">
-            <div class="tile-inner">
-              <div class="tile-front">
-                <img
-                  src="imgVid/githubIcon.svg"
-                  alt="HTML logo image with number 5 in the middle"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-
-              <div class="tile-back">
-                <div class="back-wrap">
-                  <h1>HTML</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium, eum.
-                  </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+            <div class="tile-back">
+              <div class="back-wrap">
+                <h1>HTML</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium, eum.
+                </p>
+                <p>Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Background Video for Full Screen Tile  -->
-      <video
-        id="full-page-background-video"
-        class="hidden-bg"
-        autoplay
-        loop
-        muted
-      >
-        <source src="imgVid/fullscreenVidJs.mp4" type="video/mp4" />
-      </video>
+        <!-- Tile 2 -->
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/cssIcon.svg"
+                alt="HTML logo image with number 5 in the middle"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="tile-back">
+              <div class="back-wrap">
+                <h1>HTML</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium, eum.
+                </p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/javaScriptIcon.svg"
+                alt="javascript logo with yellow background"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+
+            <div class="tile-back" id="fullPage">
+              <div class="back-wrap fullScreen-container">
+                <h1>Event Listener</h1>
+                <p>Take user into full screen Mode onclick()</p>
+                <p>Toggle elements</p>
+                <button id="full-screen" type="submit">
+                  <a class="full-screen-toggle">Full-Screen Mode</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tile 4 -->
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/nodeJsIcon.svg"
+                alt="HTML logo image with number 5 in the middle"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+            <div class="tile-back">
+              <div class="back-wrap">
+                <h1>HTML</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium, eum.
+                </p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tile 5 -->
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/web-api.svg"
+                alt="HTML logo image with number 5 in the middle"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+
+            <div class="tile-back fetchTile">
+              <div class="back-wrap">
+                <h1>FETCH API</h1>
+                <p>Random philosophy quote generator</p>
+                <button id="fetchAPI">
+                  <a class="fetchAPI" href="fetch.html">FETCH</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile-outer">
+          <div class="tile-inner">
+            <div class="tile-front">
+              <img
+                src="imgVid/githubIcon.svg"
+                alt="HTML logo image with number 5 in the middle"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+
+            <div class="tile-back">
+              <div class="back-wrap">
+                <h1>HTML</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium, eum.
+                </p>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- Background Video for Full Screen Tile  -->
+    <video
+      id="full-page-background-video"
+      class="hidden-bg"
+      autoplay
+      loop
+      muted
+    >
+      <source src="imgVid/fullscreenVidJs.mp4" type="video/mp4" />
+    </video>
 
     <script type="text/javascript" src="JS/current.js"></script>
   </body>

@@ -22,38 +22,49 @@
   </head>
   <body>
     <!-- Navigation Bar  -->
-    <nav id="nav-wrap">
-      <div class="about-meLogo">
-        <a href="index.html" class="logo">HOME</a>
-        <button class="navbar_toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
 
-      <ul class="main__nav">
-        <li>
-          <a href="/" class="nav-item">About Me</a>
-        </li>
-        <li>
-          <a href="current.html" class="nav-item">Current Work</a>
-        </li>
-        <li id="navbar-btn">
-          <a href="/" class="button" id="contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="nav-container">
+      <nav class="navbar">
+        <h2 class="home-logo">
+          <a href="index.html" class="logo">HOME</a>
+        </h2>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="/" class="nav-links">About Me</a>
+          </li>
+          <li>
+            <a href="current.html" class="nav-links">Current Work</a>
+          </li>
+          <li>
+            <a href="/" class="nav-links nav-link-btn">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main id="home-page">
       <div class="hero-container">
-        <h1 class="hero__text">
-          Hi, I am Diana Restrepo a
-          <span
-            class="txt-type"
-            data-wait="3000"
-            data-words='["Front-End Developer", "passionate Technologist","Philosophy junkie"]'
-          ></span>
+        <h1 class="hero__text" id="text">
+          Hi, I am Diana Restrepo. I am a
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='["Web Developer.", "runner.", "philosphy junkie."]'
+          >
+            <span class="wrap"></span>
+          </a>
         </h1>
-        <h2>Check out what I'm learning</h2>
+
+        <h2 id="hero-link">
+          <a href="current.html">Check out what I'm learning</a>
+        </h2>
       </div>
     </main>
 
