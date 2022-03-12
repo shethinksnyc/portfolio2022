@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="CSS/contactForm.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,17 +21,13 @@
     />
   </head>
   <body>
-    <!-- Navigation Bar  -->
-
     <header class="nav-container">
       <nav class="navbar">
         <h2 class="home-logo">
           <a href="index.html" class="logo">HOME</a>
         </h2>
-
-        <!-- Mobile Menu  -->
         <div class="menu-toggle" id="mobile-menu">
-          <div class="bar"></div>
+          <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
@@ -53,30 +49,50 @@
     </header>
 
     <main>
-      <div class="hero-container">
-        <div class="hero-wrap">
-          <h1 class="hero__text" id="text">
-            Hi, I am Diana Restrepo.<br />
-            I am a
-            <span
-              href=""
-              class="typewrite"
-              data-period="2000"
-              data-type='["Web Developer.", "runner.", "philosphy junkie."]'
-            >
-              <span class="wrap"></span>
-            </span>
-          </h1>
-        </div>
+      <!-- Main title -->
+      <div class="titleBox">
+        <h1>Contact Form</h1>
+        <p>Validation, send message, node....</p>
+      </div>
 
-        <div class="hero-link-container">
-          <h2 id="hero-link">
-            <a href="current.html">Check out what I'm learning</a>
-          </h2>
+      <div class="contact-box-container">
+        <div class="content-form-wrap">
+          <h2>Contact</h2>
+          <form id="input-fields" action="">
+            <!-- Name And Emil fields -->
+            <div class="wrapper">
+              <div class="box">
+                <p class="label">Name<br /></p>
+                <input type="text" name="name" id="name" required />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="box">
+                <p class="label">Email<br /></p>
+                <input type="email" name="email" id="email" requried />
+              </div>
+            </div>
+
+            <!-- Text Area  -->
+            <div class="wrapper">
+              <div class="box">
+                <p class="label">Message<br /></p>
+                <textarea id="message" placeholder="..." required></textarea>
+              </div>
+            </div>
+            <!-- Button -->
+
+            <input id="contact-btn" type="submit" name="" value="Send" />
+          </form>
         </div>
+      </div>
+
+      <div class="social_media-wrap">
+        <h3>Plug into Social Media</h3>
       </div>
     </main>
 
-    <script src="JS/script.js"></script>
+    <script src="JS/contactForm.js"></script>
   </body>
 </html>

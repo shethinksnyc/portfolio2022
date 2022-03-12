@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Sans", sans-serif;
+  background-color: #0b0c10;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
 }
 
 main {
-  background-color: #0b0c10;
   height: 100vh;
 }
 
@@ -18,7 +18,6 @@ main {
 .nav-container {
   display: flex;
   align-items: center;
-  /* padding: 0rem 1.5rem; */
   background-color: #0b0c10;
   width: 100%;
   height: 80px;
@@ -29,9 +28,7 @@ main {
   grid-template-columns: 0.1fr auto 1fr;
   align-items: center;
   width: 100%;
-  /* height: 80%; */
   max-width: 1720px;
-  /* margin: 0 auto; */
   font-size: 1.5rem;
 }
 
@@ -42,9 +39,6 @@ main {
 }
 
 .logo {
-  /* border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%; */
-  /* padding: 0.25rem; */
   text-decoration: none;
   background: #0b0c10;
   color: #66fcf1;
@@ -66,7 +60,6 @@ main {
 .nav-links {
   color: #66fcf1;
   text-decoration: none;
-  /* display: grid; */
   padding: 0.5rem;
 }
 
@@ -87,20 +80,26 @@ main {
   transition: all 0.7s ease-in-out;
 }
 
-/* Hero Text with typewriter effect */
+/*  Main Hero Content */
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 0 3rem;
-  position: absolute;
+#hero-link a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
 }
 
+#hero-link a:hover {
+  color: fuchsia;
+  transition: 0.7s ease-in-out;
+}
+
+/* Hero Text with typewriter effect */
+
 .hero__text {
-  height: 12%;
-  font-size: 4vh;
+  font-size: 6vh;
   color: #66fcf1;
   font-weight: 600;
 }
@@ -113,7 +112,7 @@ main {
 #hero-link a {
   text-decoration: none;
 
-  font-size: 30px;
+  font-size: 3vh;
   color: white;
   text-align: center;
   font-weight: 700;
@@ -126,4 +125,13 @@ main {
   background-color: #66fcf1;
   transition: 0.7s ease-in-out;
   position: absolute;
+}
+
+.hero-container {
+  display: flex;
+
+  justify-content: center;
+  height: 80%;
+  padding: 40px;
+  flex-direction: column;
 }
