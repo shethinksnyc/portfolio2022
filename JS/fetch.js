@@ -1,5 +1,3 @@
-//
-
 const url = "http://philosophy-quotes-api.glitch.me/quotes";
 
 const backUpQuotes = [

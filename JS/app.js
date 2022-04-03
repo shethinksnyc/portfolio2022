@@ -4,7 +4,7 @@ const { sendStatus } = require("express/lib/response");
 const app = express();
 
 app.listen(3000, () => {
-  console.log("yurrrrr!");
+  console.log("You did it!!");
 });
 
 app.post("/", (req, res) => {

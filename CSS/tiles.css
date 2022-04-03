@@ -87,6 +87,10 @@ body {
   margin: 200px;
 }
 /* Tiles  */
+main #tiles-section {
+  max-width: 1000px;
+  margin: auto;
+}
 
 .tiles-container {
   display: grid;

@@ -52,7 +52,6 @@
       <!-- Main title -->
       <div class="titleBox">
         <h1>Contact Form</h1>
-        <p>Validation, send message, node....</p>
       </div>
 
       <div class="contact-box-container">
@@ -78,7 +77,12 @@
             <div class="wrapper">
               <div class="box">
                 <p class="label">Message<br /></p>
-                <textarea id="message" placeholder="..." required></textarea>
+                <textarea
+                  id="message"
+                  placeholder="..."
+                  required
+                  rows="5"
+                ></textarea>
               </div>
             </div>
             <!-- Button -->
@@ -89,13 +93,26 @@
       </div>
 
       <div class="request" hidden>
-        <h1 class="toggleForm">content</h1>
-      </div>
-
-      <div class="social_media-wrap">
-        <h3>Plug into Social Media</h3>
+        <!-- <h1 class="toggleForm"></h1> -->
+        <p class="toggleForm">
+          Awesome! Your message has been succesfully sent. &#128512;
+        </p>
       </div>
     </main>
+    <footer>
+      <div class="footer-container">
+        <a class="icons" href="https://github.com/shethinksnyc">
+          <i class="fa-brands fa-github fa-3x gh-icon"></i>
+        </a>
+        <a
+          class="icons"
+          href="https://www.linkedin.com/in/diana-restrepo-nyc718/
+        "
+          ><i class="fa-brands fa-linkedin-in fa-3x"></i
+        ></a>
+        <h3 class="copyright">created © 2022</h3>
+      </div>
+    </footer>
 
     <script src="JS/contactform.js"></script>
   </body>
